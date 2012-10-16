@@ -1,0 +1,9 @@
+[Gedit Plugin]
+Loader=python
+Module=FindInDocuments
+IAge=2
+Name=Find In Documents
+Description=Search all open documents, or documents in active directory.
+Authors=Mike Doty <mike@psyguygames.com>
+Copyright=© Mike Doty 2010
+Website=http://www.psyguygames.com/

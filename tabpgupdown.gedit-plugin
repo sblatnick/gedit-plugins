@@ -1,0 +1,8 @@
+[Gedit Plugin]
+Loader=python
+Module=tabpgupdown
+IAge=2
+Name=TabPgUpPgDown
+Description=Switch between documents using Ctrl + Pg Up / Ctrl + Pg Down. Based on TabSwitch by Elia Sarti.
+Authors=Eran M.
+Copyright=Copyright 2009 Eran M.

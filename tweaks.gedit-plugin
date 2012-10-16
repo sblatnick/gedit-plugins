@@ -1,0 +1,9 @@
+[Gedit Plugin]
+Loader=python
+Module=tweaks
+IAge=2
+Name=Steve's Gedit UI Tweaks
+Description=Tweak the UI.
+Authors=Steven Blatnick
+Copyright=Steven Blatnick
+Website=http://www.steve8track.netfirms.com/

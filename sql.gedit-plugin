@@ -1,0 +1,9 @@
+[Gedit Plugin]
+Loader=python
+Module=sql
+IAge=2
+Name=Steve's SQL Plugin
+Description=Run SQL from Gedit and view the results
+Authors=Steven Blatnick
+Copyright=Steven Blatnick
+Website=http://www.steve8track.netfirms.com/
