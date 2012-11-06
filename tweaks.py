@@ -301,6 +301,7 @@ class TweaksPlugin(gedit.Plugin):
 			do = self.client.get_bool("/apps/gedit-2/plugins/tweaks/compactMenu")
 
 		bar = self.window.get_children()[0].get_children()
+		#bar[0].get_children()[4].get_submenu().get_children() #tools menu
 		if(do):
 			self.compactMenuButton = gtk.MenuToolButton(gtk.STOCK_ADD)
 
