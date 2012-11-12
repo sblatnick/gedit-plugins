@@ -314,8 +314,21 @@ class TweaksPlugin(gedit.Plugin):
 			self.compactMenuButton.show()
 			bar[1].insert(self.compactMenuButton, 0)
 			self.compactMenuButton.get_children()[0].get_children()[0].hide()
+			
+			self.toolsMenu = self.window.get_children()[0].get_children()[1].get_children()[0].get_menu().get_children()[4].get_submenu().get_children()[13]
+			self.toolsMenu.hide()
+			self.compactToolsMenuButton = gtk.MenuToolButton(gtk.STOCK_ADD)
+			self.submenu = self.toolsMenu.get_submenu()
+			self.toolsMenu.remove_submenu()
+			self.compactToolsMenuButton.set_menu(self.submenu)
+			self.compactToolsMenuButton.show()
+			bar[1].insert(self.compactToolsMenuButton, bar[1].get_n_items())
+			self.compactToolsMenuButton.get_children()[0].get_children()[0].hide()
+			
 		else:
 			if(self.dropMenu != None):
+				self.compactToolsMenuButton.remove(self.submenu)
+				self.toolsMenu.set_submenu(self.submenu)
 				for entry in self.dropMenu.get_children():
 					self.dropMenu.remove(entry)
 					bar[0].append(entry)
