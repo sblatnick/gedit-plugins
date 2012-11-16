@@ -115,7 +115,7 @@ class SnapOpenPluginInstance:
 			filefilter = ""
 		if len(pattern) > 0:
 			# To search by name
-			cmd = "grep -m %d -i -e '%s' %s | grep -v .class 2> /dev/null" % (max_result, pattern, self._tmpfile)
+			cmd = "grep -m %d -i -e '%s' %s | grep -v .class 2> /dev/null | grep -v lcta/build 2> /dev/null" % (max_result, pattern, self._tmpfile)
 			self._snapopen_window.set_title("Searching ... ")
 		else:
 			self._snapopen_window.set_title("Enter pattern ... ")
